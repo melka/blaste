@@ -1,0 +1,10 @@
+<div class="section">
+  <h1>{{ .Title }}</h1>
+  <h1>{{ .Params.Artist }}, {{ .Params.Year }}</h1>
+  <h1>{{ .Params.Work }}</h1>
+  <div data-jarallax-element="961">
+    {{ range .Params.Images }}
+    <li>{{ . }}</li>
+    {{ end }}
+  </div>
+</div>
